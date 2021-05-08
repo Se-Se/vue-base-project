@@ -2,9 +2,12 @@
   <div id="container" class="login">login</div>
 </template>
 <script lang="ts">
-export default {
-  name: "Login",
-  data():any {
+import { Vue } from "vue-property-decorator";
+import { State } from "vuex-class";
+export default class Login extends Vue {
+  @State("malls", { namespace: "mall" })
+  private malls!: any;
+  data(): any {
     return {
       login: {
         email: "",
@@ -13,9 +16,9 @@ export default {
       saveId: false,
       snsState: Math.floor(Math.random() * 10000),
     };
-  },
-  mounted():any {
-    console.log(1)
-  },
-};
+  }
+  mounted(): any {
+    console.log(1);
+  }
+}
 </script>
