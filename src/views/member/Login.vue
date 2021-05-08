@@ -6,18 +6,9 @@ import { Vue } from "vue-property-decorator";
 import { State } from "vuex-class";
 export default class Login extends Vue {
   @State("malls", { namespace: "mall" })
-  private malls!: any;
-  data(): any {
-    return {
-      login: {
-        email: "",
-        password: "",
-      },
-      saveId: false,
-      snsState: Math.floor(Math.random() * 10000),
-    };
-  }
-  mounted(): any {
+  private malls!: string;
+  private tt: string[] = [];
+  mounted(): void {
     console.log(1);
   }
 }
