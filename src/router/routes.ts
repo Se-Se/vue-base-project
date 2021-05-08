@@ -1,6 +1,6 @@
 // import Header from "../views/layout/Header.vue";
 import Footer from "@/views/layout/Footer.vue";
-import Login from "@/views/member/Login.vue";
+import Example from "@/views/example/Example.vue";
 import MainHome from "@/views/main/MainHome.vue";
 export default [
   {
@@ -17,10 +17,10 @@ export default [
     },
   },
   {
-    path: "/login",
-    name: "Login",
+    path: "/example",
+    name: "Example",
     components: {
-      default: Login,
+      default: Example,
       footer: Footer,
     },
     meta: {
