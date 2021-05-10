@@ -6,13 +6,12 @@ import Cookies from 'js-cookie';
 
 const messages = {
   zh: {
-      ...zhLocales,
+    ...zhLocales
   },
   en: {
-      ...enLocales,
+    ...enLocales
   }
-}
-
+};
 
 export function defaultLangeuse() {
   const langs = ['en', 'zh-cn'];
@@ -26,5 +25,5 @@ export function defaultLangeuse() {
 const i18n = createI18n({
   locale: Cookies.get('lang') || defaultLangeuse(),
   messages
-})
+});
 export default i18n;
