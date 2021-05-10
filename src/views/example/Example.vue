@@ -1,5 +1,5 @@
 <template>
-  <div id="container" class="login">login</div>
+  <div id="container" class="login">EXAMPLE:{{ $t("example.example.d1") }}</div>
 </template>
 <script lang="ts">
 import { Vue } from "vue-property-decorator";
@@ -15,8 +15,8 @@ export default class Login extends Vue {
   private tt: string = "";
  async mounted(): Promise<void> {
     console.log(1);
-    let res = await getExampleApi()
-    console.log(res)
+    // let res = await getExampleApi()
+    // console.log(res)
     console.log(2)
   }
 }
