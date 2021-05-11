@@ -6,10 +6,10 @@ export default [
   {
     path: "/",
     name: "Home",
-    redirect: "/m",
+    redirect: "/",
   },
   {
-    path: "/m",
+    path: "/",
     name: "Home",
     components: {
       // default: (reslove: any) => require(["@/views/main/Home.vue"], reslove),
