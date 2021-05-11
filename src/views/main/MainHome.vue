@@ -4,7 +4,20 @@
       <el-aside width="200px">Aside</el-aside>
       <el-container>
         <el-header>Header</el-header>
-        <el-main>Main</el-main>
+        <el-main>
+          <el-button type="success" @click="show3 = !show3">Click Me</el-button>
+
+          <div style="margin-top: 20px; height: 200px;">
+            <el-collapse-transition>
+              <div v-show="show3">
+                <div class="transition-box">el-collapse-transition</div>
+                <div class="transition-box">el-collapse-transition</div>
+              </div>
+            </el-collapse-transition>
+          </div>
+          <el-radio v-model="radio" label="1">备选项</el-radio>
+          <el-radio v-model="radio" label="2">备选项</el-radio>
+        </el-main>
         <el-footer>Footer</el-footer>
       </el-container>
     </el-container>
@@ -12,7 +25,14 @@
 </template>
 <script>
 import { Vue } from "vue-class-component";
-export default class Home extends Vue { }
+export default class Home extends Vue {
+  data () {
+    return {
+      show3: true,
+      radio:'2'
+    }
+  }
+}
 </script>
 <style scoped>
 .container {
@@ -52,5 +72,17 @@ body > .el-container {
 
 .el-container:nth-child(7) .el-aside {
   line-height: 320px;
+}
+.transition-box {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 100px;
+  border-radius: 4px;
+  background-color: #409eff;
+  text-align: center;
+  color: #fff;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  margin-right: 20px;
 }
 </style>
