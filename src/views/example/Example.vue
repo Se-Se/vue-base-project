@@ -7,7 +7,7 @@
 import {Vue, Options} from 'vue-property-decorator';
 import {State} from 'vuex-class';
 import {ExampleTypes} from '@/types';
-import {getExampleApi} from '@/api';
+// import {getExampleApi} from '@/api';
 import {mapActions} from 'vuex';
 
 @Options({
@@ -25,6 +25,8 @@ export default class Example extends Vue {
   private tt: string = '';
   async mounted(): Promise<void> {
     console.log(1);
+    console.log(this);
+    (this as any).$api.postExample({data:'123'})
 
     // let res = await getExampleApi()
     // console.log(res)

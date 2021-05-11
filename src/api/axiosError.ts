@@ -1,6 +1,6 @@
 import axios, {AxiosError} from 'axios';
 
-enum XhrErrorCode {
+export enum XhrErrorCode {
   CLIENT_ERROR = 'CLIENT_ERROR',
   SERVER_ERROR = 'SERVER_ERROR',
   CANCEL_ERROR = 'CANCEL_ERROR',
