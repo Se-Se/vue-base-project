@@ -2,6 +2,9 @@
 import Footer from "@/views/layout/Footer.vue";
 import Example from "@/views/example/Example.vue";
 import MainHome from "@/views/main/MainHome.vue";
+import Expenses from "@/views/livingExpenses/Expenses.vue";
+
+
 export default [
   {
     path: "/",
@@ -27,4 +30,11 @@ export default [
       notMember: true,
     },
   },
+  {
+    path:'/expense',
+    name:'Expenses',
+    components:{
+      default:Expenses
+    }
+  }
 ];
