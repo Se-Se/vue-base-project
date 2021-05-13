@@ -2,6 +2,7 @@
 import Footer from "@/views/layout/Footer.vue";
 import Example from "@/views/example/Example.vue";
 import MainHome from "@/views/main/MainHome.vue";
+import Login from "@/views/login/Login.vue";
 export default [
   {
     path: "/",
@@ -27,4 +28,10 @@ export default [
       notMember: true,
     },
   },
+  {
+    path:'/login',
+    components:{
+      default:Login
+    }
+  }
 ];

@@ -4,6 +4,9 @@ import router from './router';
 import store from './store';
 import i18n from '@/lang/index';
 import api from '@/api';
+// css
+require('@/assets/css/index.css');
+
 // import ElementLocale from 'element-plus/lib/locale';
 // ElementLocale.i18n((key, value) => i18n.global.t(key, value));
 const theVue = createApp(App);
