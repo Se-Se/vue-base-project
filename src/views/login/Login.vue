@@ -20,9 +20,6 @@ export default class Login extends Vue {
 }
 </script>
 <style lang="scss" scoped>
-$color:red;
-.wrap{
-  background-color: $color;
-}
+
 </style>
 

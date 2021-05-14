@@ -1,0 +1,11 @@
+@charset"utf-8";
+
+
+$color:rgb(243, 171, 89);
+.wrap{
+  background-color: $color;
+  .content{
+      width: 600rem;
+      height: 300rem;
+  }
+}
